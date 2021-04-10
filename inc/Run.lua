@@ -247,6 +247,7 @@ msg.GroupActive = true
 else
 msg.GroupActive = false
 end
+end 
 elseif msg.sender_user_id_ == 1599466764 then 
 msg.TheRank =  ' مبرمجه السورس '
 msg.Rank = 1
@@ -810,4 +811,8 @@ end
 	end
 	
 	
+end
+end
+end
+end
 end
